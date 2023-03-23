@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap" rel="stylesheet">
+    <style>
+    *{
+        box-sizing: border-box;
+
+    }
+
+    .container{
+        width: 900px;
+        background: saddlebrown;
+        border:3px solid purple;
+        margin: 33px auto
+                
+
+    }
+    .items{
+        border: 3px solid grey;
+        margin: 12px 3px;
+        padding: 32px 33px;
+        background: rgb(122, 238, 238);
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Oswald', sans-serif;
+    
+    }
+
+    #fruits{
+        float:left;
+        width: 48%;
+
+    }
+    #computer{
+        float:right;
+        width: 48%;
+
+    }
+    #stationary{
+        /* float:left; */
+        /* clear= overlapping se bachata h floating m */
+        clear: both;
+        width: 100%;
+
+    }
+    p,h1{
+        text-align: right;
+        text-align: left;
+        text-align: center;
+        text-align: justify;
+    }
+    h1{
+        margin: auto;
+        width: 500px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>WELCOME TO MY STORE</h1>
+        <div id="fruits" class="items">
+        <h3>Fruits</h3>
+        <p id="fruitspara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam vero illo quibusdam expedita doloribus fugiat, atque repudiandae, sint ratione error maiores. Debitis aperiam quasi enim. Odio quo corporis saepe fuga nihil explicabo ipsum asperiores?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, quam saepe quia harum est qui iste sequi expedita, doloremque provident consequuntur blanditiis ab iusto maiores similique nihil? Sit blanditiis repellat consectetur assumenda dolorum dignissimos.</p>
+    </div>
+    
+        <div id="computer" class="items">
+        <h3>Computer</h3>
+        <p id="computerpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam vero illo quibusdam expedita doloribus fugiat, atque repudiandae, sint ratione error maiores. Debitis aperiam quasi enim. Odio quo corporis saepe fuga nihil explicabo ipsum asperiores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, sapiente quidem, possimus voluptatem quas eveniet ab cumque culpa architecto a inventore quia aperiam corrupti quod facere cupiditate ad soluta, minus eum aut harum nemo?
+
+        </p>
+    </div>
+        <div id="stationary" class="items">
+        <h3>Stationary</h3>
+        <p id="stationarypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam vero illo quibusdam expedita doloribus fugiat, atque repudiandae, sint ratione error maiores. Debitis aperiam quasi enim. Odio quo corporis saepe fuga nihil explicabo ipsum asperiores?</p>
+    </div>
+    
+
+</body>
+</html>
+<!-- clear left= float m jo left p h wo problems create na kre yani koi b float left element us item k upper na aye issi tarah clear right m right element float k problems na kre-->
+<!-- css m jo property bad m likhi hoti h wo mani jati h phle jo property hogi wo ignore kedi jaegi
+example: jo last wali property hogi wo imlement hogi isme
+p,h1{
+    text-align: right;
+    text-align: left;
+    text-align: center;
+    text-align: justify;
+} -->
+<!-- float ab hm ziada use nh krte uski jaga flex box use krte  -->

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector and more designing </title>
+</head>
+<style>
+    .container{
+        border: 2px solid red;
+        background-color: rgb(157, 235, 42);
+        padding: 34px; ;
+        margin: 34px auto;
+      width: 666px;
+    }
+
+    a{
+        text-decoration: none;/* isse underline jo aarha h read more m wo remove hojaega*/
+        /* color: black; */
+       
+    }
+
+    /* jb arrow lkr jae ksi text p to uska color change hojae */
+    a:hover{
+        color: rgb(56, 9, 9);
+        background-color: rgb(216, 126, 9);
+    }
+
+    /* link ko open karna  wo visited khlata h jese google ki link ko href m rkh k kholna */
+    a:visited{
+
+        background-color: yellow;
+    }
+
+    a:active{
+        background-color: darkblue;
+    }
+    .btn{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        background-color: blueviolet;
+        padding: 6px;
+        border: none;
+        cursor:pointer ;
+        font-size: 13px;
+        border-radius: 4px;
+
+    }
+.btn:hover{
+    color: darkgoldenrod;
+    background-color: brown;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+</style>
+<body>
+    <!-- div.cont#cont1=ye abbrevate krdeganeche jese hwa  -->
+    <div class="container" id="cont1">
+    <h3>This is my Heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nobis architecto quod laudantium laborum minima aut maiores facere suscipit, ab eaque ad? Officiis, fugiat expedita asperiores illo rem minus temporibus eligendi laudantium perspiciatis consequatur! </p>
+    <a href="https://fonts.google.com/"class="btn">Read more</a>
+     <button class="btn">Contact us</button>
+</div>
+</body>
+</html>
